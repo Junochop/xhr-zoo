@@ -1,3 +1,17 @@
 body {
     background-color: skyblue;
 }
+#animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 1%;
+    padding: 2%;
+    width: 400px;
+    border: 2px solid rgb(67, 141, 216);
+    text-align: center;
+    background-color: rgb(67, 141, 216);
+}

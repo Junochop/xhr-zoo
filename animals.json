@@ -1,0 +1,88 @@
+{
+    "animals": [
+        {
+            "name": "BLUE POISON ARROW FROG",
+            "type": "Amphibian",
+            "number": 21,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_frogs.jpg"
+        },
+        {
+            "name": "HELLBENDER",
+            "type": "Amphibian",
+            "number": 10,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_hellbender-sm.jpg"
+        },
+        {
+            "name": "PUERTO RICAN CRESTED TOAD",
+            "type": "Amphibian",
+            "number": 11,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_prct.jpg"
+        },
+        {
+            "name": "BLUE DISCUS",
+            "type": "Fish",
+            "number": 1,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_discus-web.jpg"
+        },
+        {
+            "name": "BLACK AROWANA",
+            "type": "Fish",
+            "number": 23,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_black-arowana-web.jpg"
+        },
+        {
+            "name": "LION FISH",
+            "type": "Fish",
+            "number": 19,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_lined-seahorse.jpg"
+        },
+        {
+            "name": "ALDABRA TORTOISE",
+            "type": "Reptile",
+            "number": 11,
+            "isCarrier": false,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_koraline_-_aldabra_-_katie_gregory.jpg"
+        },
+        {
+            "name": "DWARF CAIMAN",
+            "type": "Reptile",
+            "number": 18,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_dwarf_caiman_-_sperka.jpg"
+        },
+        {
+            "name": "CAIMAN LIZARD",
+            "type": "Reptile",
+            "number": 61,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_caiman-lizard-web.jpg"
+        },
+        {
+            "name": "ALPACA",
+            "type": "Mammal",
+            "number": 63,
+            "isCarrier": false,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_alpaca1.jpg"
+        },
+        {
+            "name": "BONTEBOK",
+            "type": "Mammal",
+            "number": 67,
+            "isCarrier": false,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_bontebok-sq.jpg"
+        },
+        {
+            "name": "CLOUDED LEOPARD",
+            "type": "Mammal",
+            "number": 71,
+            "isCarrier": true,
+            "imageUrl": "https://www.speakcdn.com/assets/2147/12_cloudedleopard7.jpg"
+        }
+    ]
+}

@@ -9,9 +9,15 @@ body {
 
 .card {
     margin: 1%;
-    padding: 2%;
-    width: 400px;
+    padding: 1%;
+    width: 450px;
     border: 2px solid rgb(67, 141, 216);
     text-align: center;
     background-color: rgb(67, 141, 216);
+}
+
+.animal-image{
+    width:350px;
+    height:250px;
+
 }

@@ -1,6 +1,4 @@
 
-
-
 const printToDom = (domString, divID) => {
     document.getElementById(divID).innerHTML += domString;
 
@@ -13,10 +11,12 @@ const builddomString = (animalArray) => {
     domString += `<div class="card">`;
     domString += `<h1>${animalArray[i].name}</h1>`;
     domString += `<h3>${animalArray[i].number}</h1>`;
-    domString += `<img src=${animalArray[i].imageUrl} width="350" height="250">`;
-    domString += `<br>`;
-    domString += `<button class="card-button">Escape</button>`;
+    domString += `<img class="animal-image" src=${animalArray[i].imageUrl} width="350" height="250">`;
+    domString +=  `<div class="button-container">`;
+    domString +=    `<button class="card-button">Escape</button>`;
+    domString +=  `</div>`;
     domString += `</div>`;
+
 
     };
 

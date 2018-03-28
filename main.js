@@ -38,9 +38,31 @@ const addEscapedEventListeners = () => {
 
 };
 
-const animalEscaped = () =>{
+const animalEscaped = (e) =>{
+    const badAnimalButtonContainer = e.target.parentNode;
     showCarnivores();
     showVegetables();
+    showFoundButton(badAnimalButtonContainer);
+};
+
+const showFoundButton = (buttonContainer) => {
+    buttonContainer.innerHTML = `<button id="found">found</button>`;
+    initializeFoundButton();
+
+}
+
+const initializeFoundButton = () => {
+    const foundButton = document.getElementById('found');
+    foundButton.addEventListener("click", () =>{
+        const animals = document.getElementsByClassName("animal");
+        for(let m = 0; m < animals.length; m++) {
+            animals[m].children[3].innerHTML = `<button class="escaped"> escaped </button>`;
+            animals[m].classList.remove('green');
+            animals[m].classList.remove('red');
+        }
+        addEscapedEventListeners();
+    });
+
 };
 
 const showCarnivores = () =>{
@@ -54,17 +76,32 @@ const showCarnivores = () =>{
 
 };
 
+const intializeEatmeButtons=() => {
+    const eatMeButtons = document.getElementsByClassName("eat-me");
+    for(let n = 0; n < eatMeButtons.length; n++){
+        eatMeButtons[n].addEventListener('click', itsAlreadyBeenEaten)
+    }
+}
+
+const itsAlreadyBeenEaten = (e) => {
+    const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;//or innerText
+    const newNumber = currentNumber*1 -1;
+    e.target.parentNode.parentNode.children[1].innerHTML= newNumber;
+}
+
 
 const showVegetables = () => {
     const vegetables = document.getElementsByClassName('vegetable');
-    for(let k =0; k < vegetables.length; k++) {
-        vegetables[k].children[3].innerHTML = `<button>eat me</button>`;
+    for (let k =0; k < vegetables.length; k++) {
+        vegetables[k].children[3].innerHTML = `<button class="eat-me">eat me</button>`;
         vegetables[k].classList.add('green');
 
     }
-
+    intializeEatmeButtons();
 
 };
+
+
 
 
 
